@@ -1,0 +1,234 @@
+
+body{
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+}
+img{
+    border: none;
+}
+input{
+    outline: none;
+}
+/*body中的字体大小采用em设置，因此必须指定body的fontsize百分比，然后通过js控制该百分比来控制整体字体大小*/
+body{
+    font-size: 10%;
+}
+/*viewport*/
+.viewport{
+    width:100%;
+    height: 100vh;
+    position: relative;
+    overflow-x:hidden;
+    overflow-y: scroll;
+}
+.gotop{
+    display: none;
+}
+.QRcode{
+    display: none;
+}
+.QRcode{
+    width:150px;
+    height:180px;
+    position: fixed;
+    display: none;
+    left:50%;
+    margin-left: 300px;
+    bottom:100px;
+    background: darkorange;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,.5);
+    cursor: pointer;
+}
+.QRcode>div:first-child{
+    width:100%;
+    height:30px;
+    position: relative;
+    font-family: "微软雅黑";
+    font-size: 8em;
+    color: white;
+    line-height: 30px;
+    text-align: center;
+}
+.QRcode>div:last-child{
+    width:100%;
+    height:140px;
+    position: relative;
+    padding:5px;
+}
+.QRcode>div:last-child img{
+    width:140px;
+    height:140px;
+}
+/*header*/
+header{
+    width:100%;
+    height:40px;
+    top: 0;
+    position: fixed;
+    background: white;
+    z-index: 999;
+    line-height:40px;
+}
+header a{
+    position: relative;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12em;
+    color: darkorange;
+    margin-left: 12px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.nav{
+    width:100%;
+    height:48px;
+    position: fixed;
+    background: darkorange;
+    top:40px;
+    z-index: 999;
+}
+.nav_list{
+    width:25%;
+    height:48px;
+    position: relative;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+}
+.nav_list img{
+    height:20px;
+    position: relative;
+    margin-top: 6px;
+}
+.nav_list a{
+    position: absolute;
+    left:50%;
+    margin-left: -2em;
+    bottom:2px;
+    font-family: "微软雅黑";
+    font-size: 6em;
+    color: white;
+}
+#nav_list01{
+    background: rgb(234, 120, 0);
+}
+.content{
+    width:100%;
+    min-height: calc(100vh - 88px);
+    position: absolute;
+    top:88px;
+    background: rgb(211,211,211);
+}
+.banner{
+    width:100%;
+    height:180px;
+    position: relative;
+    cursor: pointer;
+}
+.banner img{
+    width:100%;
+    height:180px;
+    border:none;
+}
+/*product01*/
+.product01{
+    width:100%;
+    height:128px;
+    position: relative;
+    margin-top: 1px;
+    background: white;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.product01_img{
+    width:128px;
+    height:128px;
+    position: relative;
+    float: left;
+    text-align: center;
+    line-height:128px;
+    box-sizing: border-box;
+}
+.product01_img img{
+    width:122px;
+    height:122px;
+    position: relative;
+    margin-left: 0;
+    margin-top: 3px;
+}
+.product01_describe{
+    width:calc(100% - 128px);
+    height:128px;
+    position: relative;
+    float: left;
+    box-sizing: border-box;
+    padding-right: 2px;
+}
+.product01_describe_title{
+    width:100%;
+    height:35px;
+    position: relative;
+    line-height:40px;
+    text-align: left;
+    box-sizing: border-box;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space:nowrap;
+    font-family: "微软雅黑";
+    font-size: 9em;
+    color: #000;
+    box-sizing: border-box;
+    padding-right: 20px;
+}
+.product01_describe_text{
+    width:100%;
+    height:60px;
+    position: relative;
+    box-sizing: border-box;
+    text-align: left;
+    line-height:1.2em;
+    font-family: "微软雅黑";
+    font-size: 8em;
+    padding: 0 8px;
+    color: rgb(88,88,88);
+    overflow: hidden;
+}
+.product01_describe_status{
+    width:80%;
+    height:33px;
+    position: relative;
+    margin:0 auto;
+    box-sizing: border-box;
+    padding-top: 4px;
+    line-height:25px;
+    text-align: left;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space:nowrap;
+}
+.product01_describe_status a:first-child{
+    font-family: "微软雅黑";
+    font-size: 9em;
+    color: red;
+    padding: 2px 5px 0 5px;
+    box-sizing: border-box;
+}
+.product01_describe_status a:last-child{
+    font-family: "微软雅黑";
+    font-size: 8em;
+    color: dodgerblue;
+    padding: 2px 2px 0 10px;
+    box-sizing: border-box;
+}
+/*product02*/
+.product02{
+    width:100%;
+    height:100px;
+    cursor: pointer;
+}
+.product02 img{
+    width:100%;
+    height:100px;
+}

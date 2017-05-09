@@ -1,0 +1,125 @@
+
+body{
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+}
+img{
+    border: none;
+}
+input{
+    outline: none;
+}
+/*body中的字体大小采用em设置，因此必须指定body的fontsize百分比，然后通过js控制该百分比来控制整体字体大小*/
+body{
+    font-size: 10%;
+}
+/*viewport*/
+.viewport{
+    width:100%;
+    height: 100vh;
+    position: relative;
+    overflow-x:hidden;
+    overflow-y: scroll;
+}
+.gotop{
+    display: none;
+}
+.QRcode{
+    display: none;
+}
+.QRcode{
+    width:150px;
+    height:180px;
+    position: fixed;
+    display: none;
+    left:50%;
+    margin-left: 300px;
+    bottom:100px;
+    background: darkorange;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,.5);
+    cursor: pointer;
+}
+.QRcode>div:first-child{
+    width:100%;
+    height:30px;
+    position: relative;
+    font-family: "微软雅黑";
+    font-size: 8em;
+    color: white;
+    line-height: 30px;
+    text-align: center;
+}
+.QRcode>div:last-child{
+    width:100%;
+    height:140px;
+    position: relative;
+    padding:5px;
+}
+.QRcode>div:last-child img{
+    width:140px;
+    height:140px;
+}
+/*header*/
+header{
+    width:100%;
+    height:40px;
+    top: 0;
+    position: fixed;
+    background: darkorange;
+    z-index: 999;
+    line-height:40px;
+}
+.header_logo{
+    position: relative;
+    font-family: "微软雅黑";
+    font-size: 12em;
+    margin-left: 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.header_logo img{
+    width:20px;
+}
+.header_title{
+    font-family: "微软雅黑";
+    font-size: 8em;
+    color: white;
+    position: relative;
+    left:3px;
+    top:-3px;
+}
+.nav{
+    width:100%;
+    height:40px;
+    position: fixed;
+    bottom: 0;
+}
+.nav a{
+    display: block;
+    position: relative;
+    float: left;
+    text-align: center;
+    width:50%;
+    height:40px;
+    line-height:40px;
+    text-decoration: none;
+    font-family: "微软雅黑";
+    font-size: 8em;
+    color: white;
+}
+.nav a:first-child{
+    background:rgb(234, 120, 0);
+}
+.nav a:last-child{
+    background:darkorange;
+}
+.content{
+    width:100%;
+    min-height: calc(100vh - 80px);
+    position: absolute;
+    top:40px;
+    background: rgb(211,211,211);
+}
